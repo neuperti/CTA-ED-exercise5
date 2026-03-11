@@ -1,7 +1,7 @@
 ---
 title: "CTA-ED Exercise 5: Unsupervised learning (topic models)"
-author: "[Names of all group members here]"
-date: "13/03/2024"
+author: "Luca Neuperti (without smiley)"
+date: "11/03/2026"
 output: html_document
 ---
 ## Introduction
@@ -36,7 +36,7 @@ library(quanteda.textmodels)
 ```
 
 You may need to install the preText package if you haven't done so yet. For that you will need to run the next code chunk (it is currently set to 'eval=F', which tells R 'do not execute this code chunk').
-That package is not readily available on through RStudio directly. It needs to be downloaded from the Github repository set up by its creater Matthew J Denny. We can do that using the command install_github(). This command is part of the 'devtools' package, which you will need to install as well (if you haven't done so already). The devtools package is directly available through R so it can be installed with the usual command install_packages. 
+That package is not readily available on through RStudio directly. It needs to be downloaded from the Github repository set up by its creator Matthew J Denny. We can do that using the command install_github(). This command is part of the 'devtools' package, which you will need to install as well (if you haven't done so already). The devtools package is directly available through R so it can be installed with the usual command install_packages. 
 
 ```{r, message=F, eval=F}
 #install_package(devtools)
@@ -127,7 +127,7 @@ But how do we actually evaluate these topics? Here, the topics all seem pretty s
 
 ## Evaluating topic model
 
-Well, one way to evaluate the performance of unspervised forms of classification is by testing our model on an outcome that is already known. 
+Well, one way to evaluate the performance of unsupervised forms of classification is by testing our model on an outcome that is already known. 
 
 Here, two topics that are most obvious are the 'topics' Volume 1 and Volume 2 of Tocqueville's "Democracy in America." Volume 1 of Tocqueville's work deals more obviously with abstract constitutional ideas and questions of race; Volume 2 focuses on more esoteric aspects of American society. Listen an "In Our Time" episode with Melvyn Bragg discussing Democracy in America [here](https://www.bbc.co.uk/programmes/b09vyw0x).
 
