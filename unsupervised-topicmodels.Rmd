@@ -345,3 +345,16 @@ preText_score_plot(preText_results)
 1. Choose another book or set of books from Project Gutenberg
 2. Run your own topic model on these books, changing the k of topics, and evaluating accuracy.
 3. Validate different pre-processing techniques using `preText` on the new book(s) of your choice. 
+
+# 1: selecting book (Thus spoke Zarathustra - 1998)
+
+```{r}
+# Download the book
+zara <- gutenberg_download(1998, meta_fields = "title")
+
+# dividing into parts manually by part headings 
+# I wanted to use the second mention of "FIRST PART" as cutoff point to divide Z into its 4 parts but could not successfully match "FIRST PART" anywhere in the document. I could not resolve this and had to give up on this.
+all_mentions <- which(zara$text == "FIRST PART")
+actual_start <- all_mentions[2]
+
+```
